@@ -11,6 +11,26 @@
 
 ```
 
+## Instrumentation
+### Account Setup
+- You'll need a New Relic account. The good news is that you can create a free account [here](https://newrelic.com/signup) (no credit card required).
+### Agent Installation
+* Once you've created an account, you can begin installing the agent by first clicking the `Add Data` tab on the left hand navigation pane, as shown below. <img width="1490" alt="Screenshot 2023-06-05 at 2 36 30 PM" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/5fccb01f-e9c4-4877-b977-7df2ff5c2553">
+* Search for the Node.js agent in the `Search for any technology` search bar and click the Node.js agent.
+* Select `Package manager` for your instrumentation method. <img width="677" alt="Screenshot 2023-06-05 at 2 43 57 PM" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/4eca5c1f-d2fb-4577-a379-2873d383e2f1">
+* Follow the steps to instrument your application, starting with giving your application a name. <img width="761" alt="Screenshot 2023-06-05 at 2 33 01 PM" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/c904c018-fbf1-4a53-aab5-2af01e5ca13f">
+* Install the APM agent with the command `npm install newrelic --save`.
+* Download the `newrelic.js` file and save it in your root project directory.
+* Start the Relicstaurants application with the New Relic agent
+  * Go into your `package.json` and changing the `newstart` script to the following: `node -r newrelic ./server/start.js`. <br/>**OR**<br/>
+  * Alternatively, you can navigate to your `/server/start.js` file and add the line `require('newrelic')`
+* Run the given command in the `Connect your logs and infrastructure step` in your terminal.
+* Once you have connected your logs and infrastructure, you may test the connection, as shown below. <img width="724" alt="Screenshot 2023-06-05 at 2 42 09 PM" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/cc634848-c64b-4844-b854-f3a493c4d80f">
+
+### Troubleshooting
+* During the step for `Testing the connection`, you may notice that the `On-host logs` fails. This is ok and is most likely due to an unsupported environment.
+* You may also run into an issue where the Node.js agent fails to connect, as shown below. If the Node.js agent fails, but you still see data being sent to your New Relic account via the `APM & Services` for Relicstaurants, then you are good to go. If the Node.js agent fails, but you do not see data being sent to your New Relic account, then you may follow the troubleshooting steps [here](https://forum.newrelic.com/s/hubtopic/aAX8W0000008bSdWAI/nodejs-troubleshooting-framework-install).
+
 ## Getting Started
 
 ```
