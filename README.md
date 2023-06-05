@@ -29,10 +29,8 @@
 * Once you have connected your logs and infrastructure, you may test the connection, as shown below. <img width="724" alt="Screenshot 2023-06-05 at 2 42 09 PM" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/cc634848-c64b-4844-b854-f3a493c4d80f">
 
 ### Troubleshooting
-<img width="806" alt="image" src="https://github.com/mchavez-newrelic/relicstaurants/assets/104166698/db0c9529-05a9-4249-927e-6056d52791c2">
-
 * During the step for `Testing the connection`, you may notice that the `On-host logs` fails. This is ok and is most likely due to an unsupported environment.
-* You may also run into an issue where the Node.js agent fails to connect, as shown above. If the Node.js agent fails, but you still see data being sent to your New Relic account via the `APM & Services` for Relicstaurants, then you are good to go. If the Node.js agent fails, but you do not see data being sent to your New Relic account, then you may follow the troubleshooting steps [here](https://forum.newrelic.com/s/hubtopic/aAX8W0000008bSdWAI/nodejs-troubleshooting-framework-install).
+* You may also run into an issue where the Node.js agent fails to connect, as shown below. If the Node.js agent fails, but you still see data being sent to your New Relic account via the `APM & Services` for Relicstaurants, then you are good to go. If the Node.js agent fails, but you do not see data being sent to your New Relic account, then you may follow the troubleshooting steps [here](https://forum.newrelic.com/s/hubtopic/aAX8W0000008bSdWAI/nodejs-troubleshooting-framework-install). <img width="806" alt="image" src="https://github.com/mchavez-newrelic/relicstaurants/assets/104166698/db0c9529-05a9-4249-927e-6056d52791c2">
 
 ## Usage
 
