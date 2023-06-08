@@ -33,16 +33,12 @@
 * You may also run into an issue where the Node.js agent fails to connect, as shown below. If the Node.js agent fails, but you still see data being sent to your New Relic account via the `APM & Services` for Relicstaurants, then you are good to go. If the Node.js agent fails, but you do not see data being sent to your New Relic account, then you may follow the troubleshooting steps [here](https://forum.newrelic.com/s/hubtopic/aAX8W0000008bSdWAI/nodejs-troubleshooting-framework-install). <img width="806" alt="image" src="https://github.com/mchavez-newrelic/relicstaurants/assets/104166698/db0c9529-05a9-4249-927e-6056d52791c2">
 
 ## Usage
-
-> [**Optional** - Include more thorough instructions on how to use the software. This section might not be needed if the Getting Started section is enough. Remove this section if it's not needed.]
+* Once you've run `npm run build` and `npm run newstart` to start the application, you may navigate to `localhost:3000` in your web browser and see a page as shown below.<img width="1491" alt="Usage_1" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/3e819832-5779-4dcf-bd4b-9ccd1b90d100">
+* Simply input an address (does not need to be real), and you will see a page of restaurants as shown below. <img width="1493" alt="Usage_2" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/78de98ea-c7e0-4dee-81d5-760a262a1b8f">
+* You may add and place orders as shown below. <img width="1486" alt="Usage_3" src="https://github.com/mchavez-newrelic/relicstaurants/assets/132291725/d5b7d486-76b0-4db8-9df2-a3d174d06668">
 
 ## Building
-
 > Because backend of app is already in repository we need to build it manually and then make newstart, that commands will at first build whole application with backend and next will serve it in browser.
-
-## Testing
-
-> [**Optional** - Include instructions on how to run tests if we include tests with the codebase. Remove this section if it's not needed.]
 
 ## Support
 
